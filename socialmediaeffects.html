@@ -1,0 +1,668 @@
+ <!doctype html>
+<head>
+	<title>Social media icons effects</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
+
+<style>
+* {opacity: 1; padding: 0; margin: 0;}
+body {
+	width: 100vw;
+	height: auto;
+}
+i {
+	font-style: normal;
+}
+.menu {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	//background: darkgray;
+	font-family: FontAwesome;
+	display: block;
+}
+.menu:nth-child(odd):before {
+	content: '';
+	position: absolute;
+	top: 50px; left: 0px;
+	width: 130%;
+	height: 150px;
+	background: linear-gradient(to right, darkblue, #fff);
+	transform: skew(-7deg) rotate(-7deg);
+}
+
+/*************************** MENU 2********************************/
+.menu1 ul{
+	position: absolute;
+	width: 384px;
+	height: 60px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.menu1 ul:before {
+	content: '\f1e0';
+	position: absolute;
+	width: 384px;
+	height: 60px;
+	background: linear-gradient(45deg, #ff00ff, #8a2be2);
+	border-radius: 30px;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	font-size: 30px;
+	margin: 0 2px;
+	transition: 0.5s;
+	z-index: 1;
+}
+.menu1 ul:hover:before{
+	width: 60px;
+}
+.menu1 ul li {
+	position: absolute;
+	list-style: none;
+	transition: 1s;
+}
+.menu1 ul li {
+	display: block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: #262626;
+	margin: 0 2px;
+	border-radius: 50%;
+	color: white;
+	font-size: 25px;
+	transition: 1s;
+}
+.menu1 ul li:nth-child(1) {
+	background: #3b5999;
+}
+.menu1 ul li:nth-child(2) {
+	background: #55acee;
+}
+.menu1 ul li:nth-child(3) {
+	background: #dd4b39;
+}
+.menu1 ul li:nth-child(4) {
+	background: #0077b5;
+}
+.menu1 ul li:nth-child(5) {
+	background: #e4405f;
+}
+
+.menu1 ul:hover li:nth-child(1){
+	transform: translateX(64px) rotate(360deg);
+	transition-delay: 0.8s;
+}
+.menu1 ul:hover li:nth-child(2) {
+	transform: translateX(128px) rotate(360deg);
+	transition-delay: 0.6s;
+}
+.menu1 ul:hover li:nth-child(3) {
+	transform: translateX(192px) rotate(360deg);
+	transition-delay: 0.4s;
+}
+.menu1 ul:hover li:nth-child(4) {
+	transform: translateX(256px) rotate(360deg);
+	transition-delay: 0.2s;
+}
+.menu1 ul:hover li:nth-child(5) {
+	transform: translateX(320px) rotate(360deg);
+	transition-delay: 0s;
+}
+.menu1 ul li .fab{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotateY(0deg);
+	transition: 1s;
+}
+.menu1 ul li:hover .fab{
+	transform: translate(-50%, -50%) rotateY(360deg);
+}
+
+/**************************** MENU 2********************************/
+
+.menu2 ul {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	width: auto;
+	text-align: center;
+}
+.menu2 ul li {
+	position: relative;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	display: block;
+	white-space: nowrap;
+	position: relative;
+	list-style: none;
+	float: left;
+	text-decoration: none;
+	transition: 1s;
+	//transition: width 0.5s;
+	box-sizing: border-box;
+	color: white;
+}
+.menu2 ul li:hover {
+	width: 140px;
+	transition: 0.5s;
+}
+.menu2 ul li span{
+	position: absolute;
+	left: 60px;
+	transition: .5s;
+	line-height: 60px;
+}
+.menu2 ul li:hover span{
+	margin-left: 0px;
+	
+}
+.menu2 ul li .fab{
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.menu2 ul li:nth-child(1){
+	background: #3b5999;
+}
+.menu2 ul li:nth-child(2) {
+	background: #55acee;
+}
+.menu2 ul li:nth-child(3) {
+	background: #dd4b39;
+}
+.menu2 ul li:nth-child(4) {
+	background: #0077b5;
+}
+.menu2 ul li:nth-child(5) {
+	background: #e4405f;
+}
+/**************************** MENU 3 **************************************/
+.menu3 ul{
+	display: flex;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.menu3 ul li{
+	list-style: none;
+	margin: 0 20px;
+}
+.menu3 ul li .fab{
+	font-size: 20px;
+	color: white;
+	line-height: 40px;
+	transition: .5s;
+}
+
+.menu3 ul li {
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: linear-gradient(to left, #30302d, #51514c);
+	text-align: center;
+	transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+	transition: .5s;
+	box-shadow: -10px 15px 5px rgba(0,0,0,.5),
+				inset -5px 5px 10px rgba(255,255,255,0);
+		;
+}
+.menu3 ul li:before{
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: -10px;
+	height: 100%;
+	width: 10px;
+	background: #676862;;
+	transition: .5s;
+	transform: rotate(0deg) skewY(-45deg)
+}
+.menu3 ul li:after{
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	left: -5px;
+	height: 10px;
+	width: 100%;
+	background: #272825;
+	transition: .5s;
+	transform: rotate(0deg) skewX(-45deg)
+}
+.menu3 ul li:hover {
+	transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+	box-shadow: -25px 35px 15px rgba(0,0,0,.5),
+				inset 35px 35px 30px rgba(255,255,255,.1);
+	;
+}
+.menu3 ul li:nth-child(1){
+	background: #3b5999;
+}
+.menu3 ul li:nth-child(1):before{
+	background: #4a72c9;
+}
+.menu3 ul li:nth-child(1):after{
+	background: #243760;
+}
+.menu3 ul li:nth-child(2) {
+	background: #55acee;
+}
+.menu3 ul li:nth-child(2):before{
+	background: #59b7ff;
+}
+.menu3 ul li:nth-child(2):after{
+	background: #3978a8;
+}
+.menu3 ul li:nth-child(3) {
+	background: #dd4b39;
+}
+.menu3 ul li:nth-child(3):before{
+	background: #fc533f;
+}
+.menu3 ul li:nth-child(3):after{
+	background: #a8372a;
+}
+.menu3 ul li:nth-child(4) {
+	background: #0077b5;
+}
+
+.menu3 ul li:nth-child(4):before{
+	background: #0297e5;
+}
+.menu3 ul li:nth-child(4):after{
+	background: #015784;
+}
+.menu3 ul li:nth-child(5) {
+	background: #e4405f;
+}
+.menu3 ul li:nth-child(5):before{
+	background: #ff476a;
+}
+.menu3 ul li:nth-child(5):after{
+	background: #91273b;
+}
+/**************************** MENU 4********************************/
+.menu4 ul{
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.menu4 ul li {
+	margin: 10px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	background: #fff;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	color: #262626;
+	font-size: 30px;
+	z-index: 1;
+	transition: .5s ease-in-out 0s;
+	text-align: center;
+}
+.menu4 ul li:hover {
+	color: #fff;
+	transition: .5s ease-in-out .8s;
+}
+.menu4 ul li:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0; left: -100%;
+	background: #ccc;
+	z-index: -1;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: .3s ease-in-out;
+}
+.menu4 ul li:hover:before {
+	transform: scale(.9);
+	left: 0px;
+}
+.menu4 ul li:nth-child(1):before{
+	background: #3b5999;
+}
+.menu4 ul li:nth-child(2):before {
+	background: #55acee;
+}
+.menu4 ul li:nth-child(3):before {
+	background: #dd4b39;
+}
+.menu4 ul li:nth-child(4):before {
+	background: #0077b5;
+}
+.menu4 ul li:nth-child(5):before {
+	background: #e4405f;
+}
+.menu4 ul li:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0; left: 10px;
+	background: #fff;
+	z-index: -1;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: .3s ease-in-out .4s;
+}
+
+.menu4 ul li:hover:after {
+	animation: upAndDown 1.2s forwards;
+	left: 10px;
+	
+}
+@keyframes upAndDown {
+	0% {transform: scale(.0);left: 30px;top: -70px;}
+	65% {transform: scale(.9);left: 5px;top: -10px;}
+	80% {transform: scale(.9);left: 5px;top: -10px;}
+	100% {transform: scale(.0);left: 50px; top: 0px;}
+}
+/**************************** MENU 5********************************/
+.menu5 ul{
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.menu5 ul li {
+	margin: 10px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	//overflow: hidden;
+	list-style: none;
+	color: #000;
+	font-size: 30px;
+	z-index: 1;
+	transition: .5s ease-in-out;
+	text-align: center;
+}
+.menu5 ul li:hover {
+	color: #fff;
+}
+
+.menu5 ul li span{
+	position: absolute;
+	transition: transform .5s;
+	//box-shadow: 3px -3px 5px #000, -3px 3px 10px #000 ;
+}
+
+.menu5 ul li span:nth-child(1),
+.menu5 ul li span:nth-child(3) {
+	width: 100%;
+	height: 3px;
+	background: #000;
+}
+.menu5 ul li span:nth-child(1){
+	top: 0; left: 0;
+	transform-origin: right;
+}
+.menu5 ul li:hover span:nth-child(1){
+	transform-origin: left;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+.menu5 ul li span:nth-child(3){
+	bottom: 0; left: 0;
+	transform: scaleX(1);
+	transform-origin: left;
+}
+.menu5 ul li:hover span:nth-child(3){
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+
+.menu5 ul li span:nth-child(2),
+.menu5 ul li span:nth-child(4) {
+	width: 3px;
+	height: 100%;
+	background: #000;
+}
+.menu5 ul li span:nth-child(2){
+	top: 0; left: 0;
+	transform: scaleY(0);
+	transform-origin: bottom;
+}
+.menu5 ul li:hover span:nth-child(2){
+	transform-origin: top;
+	transform: scaleY(1);
+	transition: transform .5s;
+}
+.menu5 ul li span:nth-child(4){
+	top: 0; right: 0;
+	transform: scaleY(0);
+	transform-origin: top;
+}
+.menu5 ul li:hover span:nth-child(4){
+	transform-origin: bottom;
+	transform: scaleY(1);
+	transition: transform .5s;
+}
+.menu5 ul li:before {
+	content: '';
+	position: absolute;
+	top: 10%; left: 10%;
+	width: 80%; height: 80%;
+	z-index: -10;
+	transition: .4s;
+	transform-origin: center;
+	transform: scale(0) rotate(100deg);
+	background: #000;
+}
+.menu5 ul li:hover:before {
+	transform: scale(1) rotate(0deg);
+}
+/**************************** MENU 5********************************/
+.menu6 ul{
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: url(#goo);
+}
+.menu6 ul li {
+	margin: 10px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	list-style: none;
+	color: rgba(255,255,255,1);
+	font-size: 30px;
+	z-index: 10;
+	transition: .5s;
+	text-align: center;
+	border-radius: 50%;
+	filter: url(#goo);
+}
+.menu6 ul li .fab {
+	position: relative;
+	z-index: 100;
+	width: 100%;
+	text-align: center;
+}
+.menu6 li:before {
+	content: '';
+	position: absolute;
+	top: 5px; left: 5px;
+	width: 55px; height: 55px;
+	background: #000;
+	border-radius: 50%;
+	transition: .4s cubic-bezier(0,1.93,.53,.15);
+	transition-delay: .3s;
+}
+.menu6 li:hover:before {
+	width: 40px; height: 40px;
+	top: 10px; left: 10px;
+}
+.menu6 ul li span {
+	position: absolute;
+	width: 100%; height: 100%;
+	left: 0%; top: 0%;
+	background: #000;
+	z-index: -100;
+	transition: .7s cubic-bezier(0,1.89,.53,.15) .3s;
+	border-radius: 50%;
+	filter: url(#goo);
+}
+.menu6 ul li span:hover {
+	transition: .5s cubic-bezier(0,1.89,.53,.15) 0s;
+}
+.menu6 ul li span:nth-child(1) {
+	transition-delay: .1s;
+}
+.menu6 ul li:hover span:nth-child(1) {
+	left: -10%; top: 10%;
+	width: 10%; height: 10%;
+}
+.menu6 ul li:hover span:nth-child(2) {
+	left: 55%; top: -10%;
+	width: 50%; height: 50%;
+}
+.menu6 ul li:hover span:nth-child(3) {
+	left: -35%; top: 90%;
+	width: 30%; height: 30%;
+}
+.menu6 ul li:hover span:nth-child(4) {
+	left: 5%; top: 110%;
+	width: 15%; height: 15%;
+	transition-delay: .2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+svg {
+	display: none;
+}
+</style> 
+</head>
+<body>
+<div class='menu menu6'>
+	<ul>
+		<li><span></span><span></span><span></span><span></span>
+			<i class="fab fa-facebook"></i></a>
+		</li>
+		<li><span></span><span></span><span></span><span></span>
+			<i class="fab fa-twitter"></i></a></li>
+		<li><span></span><span></span><span></span><span></span>
+			<i class="fab fa-google-plus"></i></a></li>
+		<li><span></span><span></span><span></span><span></span>
+			<i class="fab fa-linkedin"></i></a></li>
+		<li><span></span><span></span><span></span><span></span>
+			<i class="fab fa-instagram"></i></a></li>
+	</ul>
+</div>
+<div class='menu menu5'>
+	<ul>
+		<li><span></span><span></span><span></span><span></span>
+			<i class="fab fa-facebook"></i></a>
+		</li>
+		<li><span></span><span></span><span></span><span></span>
+			<i class="fab fa-twitter"></i></a></li>
+		<li><span></span><span></span><span></span><span></span>
+			<i class="fab fa-google-plus"></i></a></li>
+		<li><span></span><span></span><span></span><span></span>
+			<i class="fab fa-linkedin"></i></a></li>
+		<li><span></span><span></span><span></span><span></span>
+			<i class="fab fa-instagram"></i></a></li>
+	</ul>
+</div>
+<div class='menu menu4'>
+	<ul>
+		<li><i class="fab fa-facebook"></i></a></li>
+		<li><i class="fab fa-twitter"></i></a></li>
+		<li><i class="fab fa-google-plus"></i></a></li>
+		<li><i class="fab fa-linkedin"></i></a></li>
+		<li><i class="fab fa-instagram"></i></a></li>
+	</ul>
+</div>
+<div class='menu menu3'>
+	<ul>
+		<li><i class="fab fa-facebook"></i></a></li>
+		<li><i class="fab fa-twitter"></i></a></li>
+		<li><i class="fab fa-google-plus"></i></a></li>
+		<li><i class="fab fa-linkedin"></i></a></li>
+		<li><i class="fab fa-instagram"></i></a></li>
+	</ul>
+</div>
+
+<div class='menu menu2'>
+	<ul>
+		<li><i class="fab fa-facebook"></i><span>Facebook</span></li>
+		<li><i class="fab fa-twitter"></i><span>Twitter</span></li>
+		<li><i class="fab fa-google-plus"></i><span>Google+</span></li>
+		<li><i class="fab fa-linkedin"></i><span>LinkedIn</span></li>
+		<li><i class="fab fa-instagram"></i><span>Instagram</span></li>
+	</ul>
+</div>
+
+<div class='menu menu1'>
+	<ul>
+		<li><i class="fab fa-facebook"></i></a></li>
+		<li><i class="fab fa-twitter"></i></a></li>
+		<li><i class="fab fa-google-plus"></i></a></li>
+		<li><i class="fab fa-linkedin"></i></a></li>
+		<li><i class="fab fa-instagram"></i></a></li>
+	</ul>
+</div>
+
+
+<svg>
+	<defs>
+		<filter id='goo'>
+			<feGaussianBlur in='SourceGraphic' stdDeviation='10' result='name'/>
+			<feColorMatrix in='name' mode='matrix' values='	1 0 0 0 0
+															0 1 0 0 0 
+															0 0 1 0 0
+															0 0 0 40 -21 ' result='aab'/>
+			<feBlend in='SourceGraphic' in2='aab'/>
+		</filter>
+	</defs>
+</svg>
+
+
+
+<script>
+
+</script>
+</body>
+</html>
